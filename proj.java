@@ -1,3 +1,3 @@
-public class proj {
+public class main {
   
 }
