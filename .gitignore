@@ -1,6 +1,0 @@
-target/ 
-build/ 
-dist/ 
-nbproject/private/ 
-nbbuild/ 
-*.class
