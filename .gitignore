@@ -7,3 +7,5 @@ nbbuild/
 
 .DS_Store
 **/.DS_Store
+
+nbproject/build.xml
