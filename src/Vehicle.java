@@ -1,9 +1,9 @@
 public abstract class Vehicle {
 
-    private final String name;
-    private final double maxSpeed;
-    private final double acceleration;
-    private final double handling;
+    private  String name;
+    private  double maxSpeed;
+    private  double acceleration;
+    private  double handling;
 
     private double speed;
     private double heading; // degrees, 0..360
@@ -21,16 +21,94 @@ public abstract class Vehicle {
         this.handling = handling;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public double getAcceleration() {
+        return acceleration;
+    }
+
+    public double getHandling() {
+        return handling;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public double getHeading() {
+        return heading;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public double getBoostTimer() {
+        return boostTimer;
+    }
+
+    public double getSlipTimer() {
+        return slipTimer;
+    }
+
     // ---------- Getters / setters ----------
-    public String getName() { return name; }
-    public double getMaxSpeed() { return maxSpeed; }
-    public double getAcceleration() { return acceleration; }
-    public double getHandling() { return handling; }
-    public double getSpeed() { return speed; }
-    public void setSpeed(double speed) { this.speed = Math.max(0, speed); }
-    public double getHeading() { return heading; }
-    public double getX() { return x; }
-    public double getY() { return y; }
+    public double getBoostMultiplier() {
+        return boostMultiplier;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public void setAcceleration(double acceleration) {
+        this.acceleration = acceleration;
+    }
+
+    public void setHandling(double handling) {
+        this.handling = handling;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+
+    public void setHeading(double heading) {
+        this.heading = heading;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public void setBoostTimer(double boostTimer) {
+        this.boostTimer = boostTimer;
+    }
+
+    public void setSlipTimer(double slipTimer) {
+        this.slipTimer = slipTimer;
+    }
+
+    public void setBoostMultiplier(double boostMultiplier) {
+        this.boostMultiplier = boostMultiplier;
+    }
 
     public void setPosition(double x, double y) {
         this.x = x;
