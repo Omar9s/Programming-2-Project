@@ -4,3 +4,6 @@ dist/
 nbproject/private/ 
 nbbuild/ 
 *.class.DS_Store
+
+.DS_Store
+**/.DS_Store
