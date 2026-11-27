@@ -4,6 +4,7 @@
  * @author ziadhindawy
  */
 
+import javafx.geometry.Rectangle2D;
 
 public class TrackObject {
     private double x;
@@ -54,6 +55,10 @@ public class TrackObject {
     public String getKind(){// 3ashan a3raf no3o lama agy arsem ya3ni el obtacle masaln a7mar el boost azra2
         return "NONE";
     }
-   
+    
+    public Rectangle2D getBounds() {
+    return new Rectangle2D(x, y, width, height);
+}
+    
     
 }
